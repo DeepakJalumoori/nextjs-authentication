@@ -23,13 +23,7 @@ export default function SignupPage() {
         value={user.username}
         onChange={(e) => setUser({ ...user, username: e.target.value })}
         placeholder="username"
-      />
-      <label htmlFor="password">password</label>
-      <input
-        type="password"
-        value={user.password}
-        onChange={(e) => setUser({ ...user, password: e.target.value })}
-        placeholder="password"
+        className="bg-amber-50 text-black"
       />
       <label htmlFor="email">email</label>
       <input
@@ -37,13 +31,24 @@ export default function SignupPage() {
         value={user.email}
         onChange={(e) => setUser({ ...user, email: e.target.value })}
         placeholder="email"
+        className=" bg-amber-50 text-black"
+      />
+      <label htmlFor="password">password</label>
+      <input
+        type="password"
+        value={user.password}
+        onChange={(e) => setUser({ ...user, password: e.target.value })}
+        placeholder="password"
+        className="bg-amber-50 text-black"
       />
       <button
         onClick={onSignup}
-        className="p-2 border border-gray-200 rounded-lg"
+        className="p-2 m-3 border border-gray-200 rounded-lg rounded-b-lg"
       >
         Signup here
       </button>
+
+      <Link href="/login">visit login page</Link>
     </div>
   );
 }
