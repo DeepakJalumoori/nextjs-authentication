@@ -6,7 +6,7 @@ export default async function UserProfile({ params }: any) {
       <hr />
       <p className="text-4xl">
         Profile page
-        <span className="p2 ml-2 rounded bg-red-700 text-black">{id}</span>
+        <span className="p2 ml-2 rounded bg-red-700 text-white">{id}</span>
       </p>
     </div>
   );
