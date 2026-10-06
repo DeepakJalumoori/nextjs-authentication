@@ -21,7 +21,7 @@ export default function ProfilePage() {
     try {
       const res = await axios.get("/api/users/userData");
       console.log(res.data);
-      setUserData(res.data.user[0].username);
+      setUserData(res.data.user[0]. username);
     } catch (error) {}
   };
   return (
